@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site com 3 opções</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Seção das opções -->
+    <div class="options">
+        <div class="option" onclick="showContent('conteudo1')">Variáveis</div>
+        <div class="option" onclick="showContent('conteudo2')">Objetos</div>
+        <div class="option" onclick="showContent('conteudo3')">Decisão</div>
+        <div class="option" onclick="showContent('conteudo4')">Repetição</div>
+    </div>
+
+    
+    <main id="conteudo" class="content">
+        <!-- Seção da variavel-->
+        <section id="conteudo1" class="content-section">
+            <section class="sidebar">
+                <h3>Navegação 1</h3>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                </ul>
+            </section>
+            <div class="main-content">
+                <h2>Conteúdo 1</h2>
+                <p>Este é o conteúdo da opção 1.</p>
+            </div>
+        </section>
+        <!-- Seção do objeto-->
+        <section id="conteudo2" class="content-section">
+            <section class="sidebar">
+                <h3>Navegação 2</h3>
+                <ul>
+                    <li><a href="#">Link A</a></li>
+                    <li><a href="#">Link B</a></li>
+                </ul>
+            </section>
+            <div class="main-content">
+                <h2>Conteúdo 2</h2>
+                <p>Este é o conteúdo da opção 2.</p>
+            </div>
+        </section>
+        <!-- Seção do conteúdo 1-->
+        <section id="conteudo3" class="content-section">
+            <section class="sidebar">
+                <h3>Navegação 3</h3>
+                <ul>
+                    <li><a href="#">Link X</a></li>
+                    <li><a href="#">Link Y</a></li>
+                </ul>
+            </section>
+            <div class="main-content">
+                <h2>Conteúdo 3</h2>
+                <p>Este é o conteúdo da opção 3.</p>
+            </div>
+        </section>
+        <section id="conteudo4" class="content-section">
+            <section class="sidebar">
+                <h3>Navegação 4</h3>
+                <ul>
+                    <li><a href="#">Link X</a></li>
+                    <li><a href="#">Link Y</a></li>
+                </ul>
+            </section>
+            <div class="main-content">
+                <h2>Conteúdo 4</h2>
+                <p>Este é o conteúdo da opção 3.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

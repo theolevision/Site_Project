@@ -1,0 +1,39 @@
+.options {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.option {
+    cursor: pointer;
+    flex: 1; /* Cada bloco ocupa um terço da largura */
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 0; /* Remove bordas arredondadas para encostar */
+}
+
+
+.option:hover {
+    background-color: #d5d5d5;
+}
+
+.content {
+    display: flex; /* Alinha barra lateral e conteúdo principal lado a lado */
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    min-height: 200px;
+}
+
+.sidebar {
+    width: 25%; /* Largura da barra lateral */
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.main-content {
+    width: 75%; /* Largura do conteúdo principal */
+    padding-left: 20px;
+}
