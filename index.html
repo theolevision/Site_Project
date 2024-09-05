@@ -2,13 +2,28 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalho Araya</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
-
+        <a href="#"><div class="option-nav">Apresentação</div></a>
+        <a href="#"><div class="option-nav">Membros</div></a>
+        <a href="#conteudo"><div class="option-nav">Conteúdo</div></a>
+        <a href="#"><div class="option-nav1">Conteúdo2</div></a>
     </nav>
+
+    <div id="apresentacao">
+        <h1>Apresentação</h1>
+        <p>conteudo da apresentação</p>
+    </div>
+
+    <div id="membros">
+        <h1>Membros</h1>
+        <p>conteudo da apresentação</p>
+    </div>
+
     <!-- Seção das opções -->
     <div class="options">
         <div class="option" onclick="showContent('conteudo1')">Variáveis</div>
@@ -21,13 +36,13 @@
     <main id="conteudo" class="content">
         <!-- Seção da variavel-->
         <section id="conteudo1" class="content-section">
+
             <section class="sidebar">
-                <ul>
-                    <li class="item"><a href="#var1">JS Variaveis</a></li>
-                    <li class="item"><a href="#var2">JS let</a></li>
-                    <li class="item"><a href="#var3">JS const</a></li>
-                </ul>
+                <a href="#var1"><div class="option-side">JS Variables</div></a>
+                <a href="#var2"><div class="option-side">JS let</div></a>
+                <a href="#var3"><div class="option-side">JS const</div></a>
             </section>
+
             <div class="main-content">
                 <h1 id="var1">Variáveis</h1>
                 <p>Este é o conteúdo da opção.</p>
@@ -43,16 +58,13 @@
         <!-- Seção do objeto-->
        <section id="conteudo2" class="content-section">
             <section class="sidebar">
-                <ul>
-                    <li class="item"><a href="#ob1">JS Objetos</a></li>
-                    <li class="item"><a href="#ob2">JS Object Properties</a></li>
-                    <li class="item"><a href="#ob3">JS Object Methods</a></li>
-                    <li class="item"><a href="#ob4">JS Object Display</a></li>
-                    <li class="item"><a href="#ob5">JS Object Constructors</a></li>
-
-
-                </ul>
+                <a href="#ob1"><div class="option-side">Object</div></a>
+                <a href="#ob2"><div class="option-side">Object Properties</div></a>
+                <a href="#ob3"><div class="option-side">Object Methods</div></a>
+                <a href="#ob4"><div class="option-side">Object Display</div></a>
+                <a href="#ob5"><div class="option-side">Object Constructors</div></a>
             </section>
+
             <div class="main-content">
                 <h1 id="ob1">Objetos</h1>
                 <p>Este é o conteúdo da opção.</p>
