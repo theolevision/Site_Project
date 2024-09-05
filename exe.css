@@ -1,0 +1,24 @@
+.content {
+    display: flex; /* Alinha barra lateral e conteúdo principal lado a lado */
+    border-top: 3px solid #ccc;
+    background-color: #f9f9f9;
+    min-height: 200px;
+}
+.sidebar {
+    width: 200px; /* Largura fixa da barra lateral */
+    padding-right: 20px;
+    border-right: 3px solid #ccc;
+    display: block;
+    height: 100vh; /* Faz com que a sidebar ocupe toda a altura da janela */
+}
+
+.main-content {
+    margin-left: 20px; /* Deixe espaço para a sidebar */
+    padding-left: 20px;
+}
+.item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ccc;
+    
+}
