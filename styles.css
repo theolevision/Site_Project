@@ -13,18 +13,19 @@ body {
 /*Barra de navegação*/
 
 .navbar {
+    position: fixed;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #6d6d6d;
+    background: linear-gradient(to top, rgb(3, 3, 107, 0.5), rgb(15, 4, 54));
+
 }
 
 .navbar-left .nav-link {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
     text-decoration: none;
-    
 }
 
 .navbar-left{
@@ -34,21 +35,21 @@ body {
 }
 
 .navbar-right {
-    display: flex;
-    
+    float:right;    
 }
 .nav-link{
     padding: 25px;
+    color: rgb(188, 186, 186);
+    font-family: roboto;
 }
 .navbar-right .nav-link {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
     text-decoration: none;
 }
 
 .nav-link:hover {
-    background-color: #ddd;
+    background-color: #4e4e4e;
 }
 
 @media (max-width: 768px) {
@@ -57,7 +58,23 @@ body {
         align-items: flex-start;
     }
 }
-/**/
+/*Bem vindo*/
+.Bem-vindo{
+    background-image: url("6936002.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height:600px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Bem-vindo h1{
+    color: #ffffff;
+    font-family:Roboto;
+}
+/*Parte Apresentação*/
 
 
 
