@@ -14,9 +14,10 @@ body {
 }
 /*Barra de navegação*/
 .navbar{
-    border:3px solid;
+    
     position: absolute;
     width: 100%;
+    background: linear-gradient(to bottom, rgb(0, 32, 76), rgba(18, 0, 91, 0));
 }
 .item-left{
     padding:30px 50px;
@@ -26,15 +27,42 @@ body {
     padding:30px 50px;
     float: right;
 }
+.navbar a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-right a:hover{
+    background-color:#0501563d;
+}
+
 
 
 
 .bem-vindo{
-    padding: 300px;
-    border: 5px solid;
+    height: 737px;
+    background-image: url(./img/pexels-pixabay-417122.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.text{  
+    height: 737px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.text h1{
+    font-size: 60px;
+    margin-bottom:20px ;
+}
+.text p{
+    font-size: 25px;
 }
 /*Parte Apresentação*/
-
+ 
 
 
 /*Parte do conteudo*/
