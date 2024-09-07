@@ -62,7 +62,28 @@ body {
     font-size: 25px;
 }
 /*Parte Apresentação*/
- 
+ .apresentação{
+    display: flex;
+    justify-content: flex-start;    
+    margin-top: 40px;
+    width: 100%;
+ }
+ .right-block{
+    border: solid;
+    float: right;
+ }
+ .left-block{
+    float: left;
+    border: solid;
+}
+
+ .left-block h1{
+    padding: 40px;
+ }
+ .left-block p{
+
+}
+
 
 
 /*Parte do conteudo*/
