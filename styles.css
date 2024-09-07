@@ -9,70 +9,29 @@
 body {
     margin: 0;
     padding: 0;
-}
-/*Barra de navegação*/
-
-.navbar {
-    position: fixed;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to top, rgb(3, 3, 107, 0.5), rgb(15, 4, 54));
-
-}
-
-.navbar-left .nav-link {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.navbar-left{
-    display: flex;
-    gap:50px; 
-    flex-shrink: 1;
-}
-
-.navbar-right {
-    float:right;    
-}
-.nav-link{
-    padding: 25px;
-    color: rgb(188, 186, 186);
-    font-family: roboto;
-}
-.navbar-right .nav-link {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.nav-link:hover {
-    background-color: #4e4e4e;
-}
-
-@media (max-width: 768px) {
-    .navbar-right {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-/*Bem vindo*/
-.Bem-vindo{
-    background-image: url("6936002.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    height:600px;
-    justify-content: center;
-    align-items: center;
+    display:flex;
     flex-direction: column;
 }
-.Bem-vindo h1{
-    color: #ffffff;
-    font-family:Roboto;
+/*Barra de navegação*/
+.navbar{
+    border:3px solid;
+    position: absolute;
+    width: 100%;
+}
+.item-left{
+    padding:30px 50px;
+    float: left;
+}
+.item-right{
+    padding:30px 50px;
+    float: right;
+}
+
+
+
+.bem-vindo{
+    padding: 300px;
+    border: 5px solid;
 }
 /*Parte Apresentação*/
 
