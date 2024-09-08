@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-
+    
 }
 
 /* Opcional: remove também margens padrão no body */
@@ -11,6 +11,7 @@ body {
     padding: 0;
     display:flex;
     flex-direction: column;
+    font-family: sans-serif;
 }
 /*Barra de navegação*/
 .navbar{
@@ -71,6 +72,7 @@ body {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
+    padding: 50px 0px;
  }
  .left-block{
     float: left;
@@ -79,25 +81,32 @@ body {
 
  .left-block h1{
     padding: 40px;
+    font-size: 230%;
  }
  .left-block p{
-    padding: 20px;
-    margin-left: 100px;
+    border: solid;
+    padding: 10px;
+    margin-left: 70px;
+    max-width: 600px;
+    font-size: 110%;
 }
 
 .code-box {
-    margin: 50px;
-    border-radius: 30px;
+    margin: 100px 200px ;
+    border-radius: 40px;
     float: right;
     width: 100%; /* Ajuste a largura conforme necessário */
-    max-width: 400px; /* Largura máxima */
-    height: 400px; /* Altura fixa */
-    padding: 30px 10px;
-    font-family: monospace;
+    max-width: 300px; /* Largura máxima */
+    height: 300px; /* Altura fixa */
+    padding: 50px 20px;
+    font-family: monospace !important;
     background-color: #2d2d2d; /* Cor de fundo similar ao tema Dark+ do VSCode */
     color: #D4D4D4; /* Cor do texto similar ao tema Dark+ do VSCode */
     overflow: hidden; /* Remove as barras de rolagem */
     white-space: pre-wrap; /* Preserva quebras de linha e espaços em branco */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .code-box pre {
     margin: 0; /* Remove margens do <pre> */
