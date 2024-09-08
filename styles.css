@@ -62,29 +62,51 @@ body {
     font-size: 25px;
 }
 /*Parte Apresentação*/
- .apresentação{
+ #apresentacao{
     display: flex;
-    justify-content: flex-start;    
-    margin-top: 40px;
+    justify-content: space-between;
+    align-items: initial;    
     width: 100%;
- }
- .right-block{
-    border: solid;
-    float: right;
+    background-image: url(./img/4931868.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
  }
  .left-block{
     float: left;
-    border: solid;
+    
 }
 
  .left-block h1{
     padding: 40px;
  }
  .left-block p{
-
+    padding: 20px;
+    margin-left: 100px;
 }
 
-
+.code-box {
+    margin: 50px;
+    border-radius: 30px;
+    float: right;
+    width: 100%; /* Ajuste a largura conforme necessário */
+    max-width: 400px; /* Largura máxima */
+    height: 400px; /* Altura fixa */
+    padding: 30px 10px;
+    font-family: monospace;
+    background-color: #2d2d2d; /* Cor de fundo similar ao tema Dark+ do VSCode */
+    color: #D4D4D4; /* Cor do texto similar ao tema Dark+ do VSCode */
+    overflow: hidden; /* Remove as barras de rolagem */
+    white-space: pre-wrap; /* Preserva quebras de linha e espaços em branco */
+}
+.code-box pre {
+    margin: 0; /* Remove margens do <pre> */
+    white-space: pre-wrap; /* Preserva quebras de linha e espaços em branco */
+    word-wrap: break-word; /* Quebra linhas longas */
+    overflow: hidden; /* Remove barras de rolagem do <pre> */
+    padding: 0 !important;
+    width: max-content !important;
+}
 
 /*Parte do conteudo*/
 .options {
@@ -145,3 +167,4 @@ ul, ol {
 .option-nav:hover{
     background-color: #404040;
 }
+
