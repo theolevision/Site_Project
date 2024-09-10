@@ -126,12 +126,6 @@ body {
 
 /*Parte dos membros*/
 
-.container {
-    display: grid;
-    grid-template-rows: repeat(4, 100px);  /* 4 linhas no total, porque cada bloco ocupa 2 linhas */
-    grid-template-columns: repeat(6, 100px); /* 6 colunas, porque 3 blocos em cima e 3 embaixo */
-    gap: 10px; /* Espaço entre os blocos, opcional */
-}
 
 .item {
     border: solid 1px black;
@@ -160,7 +154,7 @@ body {
 .item::before {
     border-radius:30px;
     content: '';
-    position: absolute;
+    
     top: 0;
     left: 0;
     right: 0;
