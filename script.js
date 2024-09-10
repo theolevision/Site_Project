@@ -14,7 +14,7 @@ function showContent(id) {
 
 // Mostra a primeira seção por padrão (opcional)
 document.addEventListener('DOMContentLoaded', () => {
-    showContent('conteudo1');
+    showContent('conteudo3');
 });
 
 
@@ -40,3 +40,4 @@ setInterval(updateCode, 1500); // Troca o código a cada 3 segundos
 
 // Inicializa com o primeiro código
 updateCode();
+

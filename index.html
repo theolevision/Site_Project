@@ -6,6 +6,7 @@
     <title>Trabalho Araya</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/vs2015.min.css">
 </head>
 <body>
     <!--Navbar-->
@@ -34,44 +35,36 @@
                 de decisão, como if/else, e os poderosos loops while e for. Também vamos explorar como trabalhar com objetos, essenciais para o 
                 desenvolvimento em JavaScript. Nosso objetivo é transmitir os conceitos básicos de programação assim como ajudar você a aplicá-los
                  em problemas reais, tornando o aprendizado mais prático e eficiente.
-            </p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <p>
-                A seguir, apresentamos os membros do projeto com suas respectivas funções, além do material teórico 
-                disponível para as aulas. Bons estudos!
-            </p>
         </div>
         <div class="code-box">
             <pre><code class="language-javascript" id="codeBox"></code></pre>
         </div>
     </div>
+    
+    <div class="parte-membros"></div>
+        <div id="membros-text">
+            <h1>Membros</h1>
+        </div>
+            <div class="membro">
+                <div class="membros">
+                
+                </div>
+                <div class="membros">
 
-    <div id="membros-text">
-        <h1>Membros</h1>
-    </div>
-    <div class="membro">
-        <div class="membros">
-            
-        </div>
-        <div class="membros">
+                </div>
+                <div class="membros">
+                    
+                </div>
+                <div class="membros">
 
-        </div>
-        <div class="membros">
-        </div>
-        <div class="membros">
+                </div>
+                <div class="membros">
 
-        </div>
-        <div class="membros">
+                </div>
+                <div class="membros">
 
-        </div>
-        <div class="membros">
-
-        </div>
+                </div>
+            </div>
     </div>
 
     <!-- Seção das opções -->
@@ -136,19 +129,54 @@
         <!-- Seção da Decisão-->
         <section id="conteudo3" class="content-section">
             <section class="sidebar">
-                <a href="#var1"><div class="option-side">JS If, Else, Elseif</div></a>
-                <a href="#var2"><div class="option-side">JS Switch Statement</div></a>
-                <a href="#var3"><div class="option-side">Ternary Operator</div></a>
+                <a href="#va1"><div class="option-side">JS If, Else, Elseif</div></a>
+                <a href="#va2"><div class="option-side">JS Switch Statement</div></a>
+                <a href="#va3"><div class="option-side">Ternary Operator</div></a>
             </section>
 
             <div class="main-content">
-                <h1 id="var1">If, Else, Elseif</h1>
-                <p>Este é o conteúdo da opção.</p>
+                <h1 id="va1">If, Else, Elseif</h1>
+                <p>If: executa um bloco se a condição especificada for verdadeira.<br>
+                    Else: executa um bloco se a condição do if for falsa.<br>
+                    Elseif: testa várias condições, é executado se a condição do if for falsa e a do elseif for verdadeira.
+                </p>
+                <div class="container-code">
+                    <pre><code class="language-javascript">
+                        greet(name) {
+                        console.log("Hello, " + name + "!");
+                        }
 
-                <h1 id="var2">Switch Statement</h1>
-                <p>Este é o conteúdo da opção.</p>
+                        greet("World");
+                    </code></pre>
+                </div>
+                <h1 id="va2">Switch Statement</h1>
+                <p>Executa diferentes partes do código com base no valor de uma variável, uma alternativa ao uso de vários if e elseif.</p>
+                
+                <div class="container-code"></div>
+                    <pre><code class="language-javascript">
+let idade = 25;
+let faixaEtaria;
 
-                <h1 id="var3">Ternary Operator</h1>
+switch (true) {
+    case (idade < 13):
+        faixaEtaria = "Criança";
+        break;
+    case (idade >= 13 && idade < 20):
+        faixaEtaria = "Adolescente";
+        break;
+    case (idade >= 20 && idade < 60):
+        faixaEtaria = "Adulto";
+        break;
+    default:
+        faixaEtaria = "Idoso";
+        break;
+}
+
+console.log(faixaEtaria);
+                    </code></pre>
+                </div>
+
+                <h1 id="va3">Ternary Operator</h1>
                 <p>Este é o conteúdo da opção.</p>
             </div>
         </section>
@@ -193,6 +221,8 @@
                 <p>Este é o conteúdo da opção.</p>
             </div>
     </main>
+    
+
     
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
