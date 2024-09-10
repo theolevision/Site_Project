@@ -41,7 +41,7 @@
     </div>
     
     
-
+    <h1 class="conteudo-text">Conteúdo</h1>
     <!-- Seção das opções -->
     <div class="options">
         <div class="option" onclick="showContent('conteudo1')">Variáveis</div>
@@ -53,7 +53,7 @@
     <!--Seção dos conteudos-->
     
     <div id="conteudo" class="content">
-
+        
         <!-- Seção da variavel-->
 
         <section id="conteudo1" class="content-section">
@@ -177,57 +177,150 @@
             <div class="main-content">
                 <h1 id="ob1">Objetos</h1>
                 <div class="text-and-code">
-                    <p>Em JavaScript, um objeto é uma coleção dinâmica de propriedades, onde cada propriedade é uma associação entre um nome (ou chave) e um valor. Esse valor pode ser uma simples string, um número, um booleano, ou mesmo outra estrutura complexa como um array ou um outro objeto, permitindo a criação de estruturas de dados aninhadas e complexas.
-                    </p>
+                    <p>Em JavaScript, um objeto é uma coleção dinâmica de propriedades, onde cada propriedade é uma associação entre um nome (ou chave) e um valor. Esse valor pode ser uma simples string, um número, um booleano, ou mesmo outra estrutura complexa como um array ou um outro objeto, permitindo a criação de estruturas de dados aninhadas e complexas.
+                </p>
                     <pre>
                         <code class="language-javascript">
-                           
+                            const pessoa = {
+                                nome: "Maria",
+                                idade: 28
+                            };
                         </code>
                     </pre>
                </div>
 
-                <h1 id="ob2">Objetos Properties</h1>
+                <h1 id="ob2">Propriedades dos Objetos</h1>
                 <div class="text-and-code">
-                    <p>
+                    <p>As propriedades do objeto são as características que todas as propriedades tem em comum com o objeto a ser escolhido
+                        Propriedades não definidas de um objeto são undefined (e não null).
+                     
                     </p>
                     <pre>
                         <code class="language-javascript">
-                           
+                            Construtor: const carro = new Object();
+                            carro.marca = "Toyota";
+                            carro.ano = 2020;
                         </code>
                     </pre>
                </div>
-                <h1 id="ob3">Objetos Methods</h1>
+                <h1 id="ob3">Metodos dos Objetos</h1>
                 <div class="text-and-code">
-                    <p>
+                    <p>Métodos: Ação e Comportamento
+                        Quando uma propriedade de um objeto é uma função, chamamos isso de método. Métodos são essenciais para definir o comportamento dos objetos, permitindo a execução de ações específicas relacionadas a esse objeto ou a manipulação de seus dados internos.
+                        <br>
+                        <br>
+                        Definindo e Utilizando Métodos
+                        Métodos são definidos de maneira semelhante a propriedades, mas seu valor é uma função. A palavra-chave this dentro de um método refere-se ao objeto ao qual o método pertence, proporcionando acesso às outras propriedades e métodos do objeto.
                     </p>
                     <pre>
                         <code class="language-javascript">
-                           
+                            const usuario = {
+                                nome: "Pedro",
+                                saudar: function() {
+                                    console.log("Olá, meu nome é " + this.nome);
+                                }
+                            };
+                            
+                            usuario.saudar(); // "Olá, meu nome é Pedro"                            
                         </code>
                     </pre>
+                    <p>                        Métodos como Ferramentas de Encapsulamento
+                        Os métodos não servem apenas para executar ações; eles também desempenham um papel crucial no encapsulamento de dados, garantindo que o acesso e a modificação das propriedades de um objeto sejam controlados de maneira coerente e segura. <br> <br>
+                        Objetos, com suas propriedades e métodos, formam a espinha dorsal da programação em JavaScript. Compreender esses conceitos não apenas habilita o desenvolvedor a manipular dados de maneira eficiente mas também abre portas para conceitos mais avançados, como protótipos, herança, e programação orientada a objetos. À medida que avançamos na exploração de JavaScript, a profundidade e a potência desses conceitos básicos se revelam, oferecendo um caminho robusto para a criação de aplicações complexas e eficazes.</p>
                </div>
 
                 <h1 id="ob4">Objetos Display</h1>
                 <div class="text-and-code">
-                    <p>
+                    <p>O display ele basicamente vai mostrar/exibir o objeto a ser escrito, podendo ser: nome, em loop, usando Objects.values() ou JSON.stringfy()
+
                     </p>
                     <pre>
                         <code class="language-javascript">
-                           
+                            Display
+                            output: [object OBJECT]
+                            // Create an Object
+                            const person = {
+                              name: "John",
+                              age: 30,
+                              city: "New York"
+                            };
+                            
+                            document.getElementById("demo").innerHTML = person;
+                            
+                            Display properties: // Create an Object
+                            const person = {
+                              name: "John",
+                              age: 30,
+                              city: "New York"
+                            };
+                            
+                            // Display Properties
+                            document.getElementById("demo").innerHTML =
+                            person.name + "," + person.age + "," + person.city;
+                            saem como STRING
+                            
+                            Display properties in a loop
+                            // Create an Object
+                            const person = {
+                              name: "John",
+                              age: 30,
+                              city: "New York"
+                            };
+                            
+                            // Build a Text
+                            let text = "";
+                            for (let x in person) {
+                              text += person[x] + " ";
+                            };
+                            
+                            // Display the Text
+                            document.getElementById("demo").innerHTML = text;
+                            sai em loop
+                            
+                            Object.values()
+                            // Create an Object
+                            const person = {
+                              name: "John",
+                              age: 30,
+                              city: "New York"
+                            };
+                            
+                            // Create an Array
+                            const myArray = Object.values(person);
+                            
+                            // Display the Array
+                            document.getElementById("demo").innerHTML = myArray;
+                            Cria um array dos valores da propriedade
                         </code>
                     </pre>
                 </div>
 
                 <h1 id="ob5">Objetos Constructors</h1>
                 <div class="text-and-code">
-                    <p>
+                    <p>Construtor de Objeto: Emprega-se o construtor Object, seguido pela atribuição de propriedades.
                     </p>
                     <pre>
                         <code class="language-javascript">
-                           
+                            const carro = new Object();
+                            carro.marca = "Toyota";
+                            carro.ano = 2020;
                         </code>
                     </pre>
-               </div>
+                </div>
+                <div class="text-and-code">
+                    <p>Função Construtora: Definimos uma função que atua como uma "fábrica" de objetos, utilizando "this" para atribuir propriedades a instâncias específicas.
+                    </p>
+                    <pre>
+                        <code class="language-javascript">
+                            function Animal(tipo, nome) {
+                                this.tipo = tipo;
+                                this.nome = nome;
+                            }
+                            
+                            let meuPet = new Animal("Cão", "Rex")
+                        </code>
+                    </pre>
+                </div>
             </div>
         </section>
 
@@ -358,42 +451,38 @@
     </div>
 
 
-    <div id="membros-text">
-        <h1>Membros</h1>
-    </div>
-    <div class="espaço">
-    <div class="container">
-        <div class="item item-1">
-            <p>Vitória Roberta de Abreu da Silva</p>
-            <p></p>
-            <p></p>
+    <div class="espaço2">
+        <div id="membros-text">
+            <h1>Membros</h1>
         </div>
-        <div class="item item-2">
-            <p></p>
-            <p></p>
-            <p></p>
+        <div class="espaço">
+            <div class="container">
+                <div class="item item-1">
+                        <p>Vitória Roberta de Abreu da Silva</p>
+                        <p>Apresentadora, Assistente artistica.</p>
+                </div>
+                <div class="item item-2">
+                    <p>Davi Alexandre Regis Castro</p>
+                    <p>Variáveis</p>
+                </div>
+                <div class="item item-3">
+                    <p>Luís Filipe Ferreira Braga da Costa Lima</p>
+                    <p>Objetos</p>
+                </div>
+                <div class="item item-4">
+                    <p>Giulia santiago afonso da silva</p>
+                    <p>Decisão</p>
+                </div>
+                <div class="item item-5">
+                    <p>Vitor Luciano Costa Chagas</p>
+                    <p>Loops e Repetição</p>
+                </div>
+                <div class="item item-6">
+                    <p>Theo Penha Valente</p>
+                    <p>Desenvolvedor Web</p>
+                </div>
+            </div>
         </div>
-        <div class="item item-3">
-            <p></p>
-            <p></p>
-            <p></p>
-        </div>
-        <div class="item item-4">
-            <p></p>
-            <p></p>
-            <p></p>
-        </div>
-        <div class="item item-5">
-            <p></p>
-            <p></p>
-            <p></p>
-        </div>
-        <div class="item item-6">
-            <p></p>
-            <p></p>
-            <p></p>
-        </div>
-    </div>
     </div>
     
     <script src="script.js"></script>

@@ -134,84 +134,107 @@ body {
 }
 
 /* Organizando os blocos */
+.espaço2{
+    height: 1500px;
+    background-image:url(./img/abstract-gradient-neon-lights.jpg);
+}
 .espaço{
     padding: 0px 150px;
 }
 .container {
+    background: linear-gradient(to bottom, rgb(15, 2, 60), black);
     display: grid;
     grid-template-rows: repeat(6, 100px); /* 3 linhas */
     grid-template-columns: repeat(6, 100px); /* 6 colunas */
-    justify-content: space-between; /* Espaço entre os blocos, opcional */
-    height: fit-content;
+    justify-content: space-around; /* Espaço entre os blocos, opcional */
+    height: max-content;
     gap: 90px;
 }
 
+
 .item {
+    padding-top: 110%;
     border-radius: 30px;
     grid-row: span 3; /* Cada item ocupa 3 linhas */
     grid-column: span 2; /* Cada item ocupa 2 colunas */
 }
-.item::before {
-    border-radius:30px;
-    content: '';
-    
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0));
-    z-index: 1; /* Garante que o gradiente fique atrás do texto */
-}
 
-.item p {
-    all: unset;
-    color: black;
-    bottom: 0%;
-    align-items: center;
-    position: relative;
+.item p{
+    display:flex;
     justify-content: center;
-    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: rgba(12, 0, 59, 0.859);
+    color: aliceblue;
 }
 
 /* Organizando os blocos */
 .item-1 {
-    z-index: 10;
-    background-image: url(./img/Captura\ de\ tela\ 2024-09-10\ 164750.png);
-    position: relative;
-    background-size: cover;
-    background-position: top;
-    color: white; /* cor do texto */    
+    border-radius: 30px;  
     grid-row: 1 / 4; /* Primeira linha (3 linhas de altura) */
     grid-column: 1 / 3; /* Primeiras 2 colunas */
+    background-image: url(./img/Captura\ de\ tela\ 2024-09-10\ 164750.png);
+    background-position: top;
+    background-size: cover;
 }
 
 .item-2 {
     grid-row: 1 / 4;
     grid-column: 3 / 5; /* Próximas 2 colunas */
+    background-image: url(./img/davi.jpg);
+    background-position: top;
+    background-size: cover;
 }
 
 .item-3 {
     grid-row: 1 / 4;
     grid-column: 5 / 7; /* Últimas 2 colunas */
+    background-image: url(./img/gin.jpg);
+    background-position: top;
+    background-size: cover;
 }
 
 .item-4 {
     grid-row: 4 / 7; /* Segunda linha (3 linhas de altura) */
+    background-image: url(./img/Captura\ de\ tela\ 2024-09-10\ 182044.png);
+    background-position: top;
+    background-size: cover;
     grid-column: 1 / 3;
 }
 
 .item-5 {
     grid-row: 4 / 7;
     grid-column: 3 / 5;
+    background-image: url(./img/vitor.jpg);
+    background-position: top;
+    background-size: cover;
 }
 
 .item-6 {
     grid-row: 4 / 7;
     grid-column: 5 / 7;
+    background-image: url(./img/theo.jpg);
+    background-position: top;
+    background-size: cover;
 }
 
+.conteudo-text{
+    padding:50px;
+    align-items: center;
+    display: flex;
+    background: linear-gradient(162deg, rgb(250, 251, 249), rgb(48, 86, 83));
+    color:rgb(0, 0, 0)
 
+}
 
+#membros-text{
+    padding:100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-top:2px solid black ;
+    color:bisque;
+}
 /*.parte-membros{
     /*background-image: url(./img/abstract-gradient-neon-lights.jpg);
     background-size: cover;
