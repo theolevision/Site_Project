@@ -14,7 +14,7 @@ function showContent(id) {
 
 // Mostra a primeira seção por padrão (opcional)
 document.addEventListener('DOMContentLoaded', () => {
-    showContent('conteudo3');
+    showContent('conteudo1');
 });
 
 
