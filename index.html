@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalho Araya</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/vs2015.min.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="prism.css">
 </head>
 <body>
     <!--Navbar-->
     <div class="navbar">
         <div class="nav-right">
-            
             <a href="#conteudo" class="item-right">Conteúdo</a>
             <a href="#membros-text" class="item-right">Membros</a>
             <a href="#apresentacao" class="item-right">Apresentação</a>
@@ -34,38 +33,14 @@
             <p>Bem-vindo ao nosso site introdutório em JavaScript! Aqui você vai aprender desde os conceitos básicos de variáveis até estruturas 
                 de decisão, como if/else, e os poderosos loops while e for. Também vamos explorar como trabalhar com objetos, essenciais para o 
                 desenvolvimento em JavaScript. Nosso objetivo é transmitir os conceitos básicos de programação assim como ajudar você a aplicá-los
-                 em problemas reais, tornando o aprendizado mais prático e eficiente.
+                em problemas reais, tornando o aprendizado mais prático e eficiente.
         </div>
         <div class="code-box">
             <pre><code class="language-javascript" id="codeBox"></code></pre>
         </div>
     </div>
     
-    <div class="parte-membros"></div>
-        <div id="membros-text">
-            <h1>Membros</h1>
-        </div>
-            <div class="membro">
-                <div class="membros">
-                
-                </div>
-                <div class="membros">
-
-                </div>
-                <div class="membros">
-                    
-                </div>
-                <div class="membros">
-
-                </div>
-                <div class="membros">
-
-                </div>
-                <div class="membros">
-
-                </div>
-            </div>
-    </div>
+    
 
     <!-- Seção das opções -->
     <div class="options">
@@ -75,27 +50,118 @@
         <div class="option" onclick="showContent('conteudo4')">Repetição</div>
     </div>
 
+    <!--Seção dos conteudos-->
     
-    <main id="conteudo" class="content">
+    <div id="conteudo" class="content">
+
         <!-- Seção da variavel-->
+
         <section id="conteudo1" class="content-section">
 
-            <section class="sidebar">
+            <div class="sidebar">
                 <a href="#var1"><div class="option-side">JS Variables</div></a>
                 <a href="#var2"><div class="option-side">JS let</div></a>
                 <a href="#var3"><div class="option-side">JS const</div></a>
-            </section>
+                <a href="#var4"><div class="option-side">Quando usar let e const?</div></a>
+
+            </div>
 
             <div class="main-content">
                 <h1 id="var1">Variáveis</h1>
-                <p>Este é o conteúdo da opção.</p>
+
+                <div class="text-and-code">
+                <p>Caixas para Guardar Valores
+                    Imagine uma caixa. Você pode colocar diferentes coisas dentro dela: um brinquedo, um livro, uma fruta. 
+                    Em programação, as variáveis são como essas caixas, mas em vez de objetos físicos, elas guardam valores. Esses valores podem ser números, palavras (texto), valores verdadeiros ou falsos (booleanos), e muito mais.
+                </p>
+                <pre>
+                    <code class="language-javascript">
+                        let nome = "João";
+                        let idade = 30;
+                        let estaChovendo = false;
+                        /*
+                        "nome" guarda o texto "João".
+                        "idade" guarda o inteiro 30.
+                        "estaChovendo" guarda o valor booleano false (falso)
+                        */
+                    </code>
+                </pre>
+                
+                </div>
+
 
                 <h1 id="var2">Variáveis let</h1>
-                <p>Este é o conteúdo da opção.</p>
+                <div class="text-and-code">
+                    <p>Caixas para Guardar Valores
+                        Escopo: As variáveis let têm escopo de bloco, ou seja, elas só existem dentro do bloco de código onde foram declaradas (por exemplo, dentro de um par de chaves {}).
+                        Reatribuição: Podemos mudar o valor de uma variável let depois de declará-la.
+                    </p>
+                    <pre>
+                        <code class="language-javascript">
+                            let corFavorita = "azul";
+                            console.log(corFavorita); 
+
+                            corFavorita = "verde";
+                            console.log(corFavorita); 
+                            /*
+                            Terminal:
+                            azul
+                            verde
+                            */
+                        </code>
+                    </pre>
+                    <br>
+                </div>
+
 
                 <h1 id="var3">Variáveis const</h1>
-                <p>Este é o conteúdo da opção.</p>
+                
+                <div class="text-and-code">
+                    <p>Caixas para Guardar Valores
+                        Escopo: As variáveis let têm escopo de bloco, ou seja, elas só existem dentro do bloco de código onde foram declaradas (por exemplo, dentro de um par de chaves {}).
+                        Reatribuição: Podemos mudar o valor de uma variável let depois de declará-la.
+                    </p>
+                    <pre>
+                        <code class="language-javascript">
+                            const pi = 3.14159;
+                            console.log(pi); // Saída: 3.14159
+
+                            // O código abaixo geraria um erro:
+                            // pi = 3.14;
+                            Use o código com cuidado.
+                        </code>
+                    </pre>
+                </div>
+
+
+                <h1 id="var4">Quando usar let e const?</h1>
+                <div class="text-and-code">
+                    <p>Let: Use quando precisar de uma variável cujo valor pode mudar durante a execução do programa. <br>
+                        Const: Use quando o valor da variável não deve mudar, como constantes matemáticas (pi), configurações que não mudam ou para evitar erros de atribuição acidental.                        
+                    </p>
+                    <pre>
+                        <code class="language-javascript">
+                            const nomeDoProduto = "Camiseta";
+                            let quantidadeEmEstoque = 10;
+                            
+                            // ... código que vende um produto ...
+                            
+                            quantidadeEmEstoque = quantidadeEmEstoque - 1;
+                            console.log("Agora temos", quantidadeEmEstoque, "camisetas em estoque.");                            
+                        </code>
+                    </pre>
+                    <p>
+                        Use o código com cuidado. <br>
+                        <br>
+                        Neste exemplo:
+                        <br>
+                        <br>
+                        "nomeDoProduto" é uma constante, pois o nome do produto não muda. <br>
+                        "quantidadeEmEstoque" é uma variável let, pois a quantidade em estoque pode mudar conforme os produtos são vendidos.
+                    </p>
+                </div>
             </div>
+
         </section>
 
         <!-- Seção do objeto-->
@@ -110,19 +176,58 @@
 
             <div class="main-content">
                 <h1 id="ob1">Objetos</h1>
-                <p>Este é o conteúdo da opção.</p>
+                <div class="text-and-code">
+                    <p>Em JavaScript, um objeto é uma coleção dinâmica de propriedades, onde cada propriedade é uma associação entre um nome (ou chave) e um valor. Esse valor pode ser uma simples string, um número, um booleano, ou mesmo outra estrutura complexa como um array ou um outro objeto, permitindo a criação de estruturas de dados aninhadas e complexas.
+                    </p>
+                    <pre>
+                        <code class="language-javascript">
+                           
+                        </code>
+                    </pre>
+               </div>
 
                 <h1 id="ob2">Objetos Properties</h1>
-                <p>Este é o conteúdo da opção.</p>
-
+                <div class="text-and-code">
+                    <p>
+                    </p>
+                    <pre>
+                        <code class="language-javascript">
+                           
+                        </code>
+                    </pre>
+               </div>
                 <h1 id="ob3">Objetos Methods</h1>
-                <p>Este é o conteúdo da opção.</p>
+                <div class="text-and-code">
+                    <p>
+                    </p>
+                    <pre>
+                        <code class="language-javascript">
+                           
+                        </code>
+                    </pre>
+               </div>
 
                 <h1 id="ob4">Objetos Display</h1>
-                <p>Este é o conteúdo da opção.</p>
+                <div class="text-and-code">
+                    <p>
+                    </p>
+                    <pre>
+                        <code class="language-javascript">
+                           
+                        </code>
+                    </pre>
+                </div>
 
                 <h1 id="ob5">Objetos Constructors</h1>
-                <p>Este é o conteúdo da opção.</p>
+                <div class="text-and-code">
+                    <p>
+                    </p>
+                    <pre>
+                        <code class="language-javascript">
+                           
+                        </code>
+                    </pre>
+               </div>
             </div>
         </section>
 
@@ -136,48 +241,77 @@
 
             <div class="main-content">
                 <h1 id="va1">If, Else, Elseif</h1>
-                <p>If: executa um bloco se a condição especificada for verdadeira.<br>
-                    Else: executa um bloco se a condição do if for falsa.<br>
-                    Elseif: testa várias condições, é executado se a condição do if for falsa e a do elseif for verdadeira.
-                </p>
-                <div class="container-code">
-                    <pre><code class="language-javascript">
-                        greet(name) {
-                        console.log("Hello, " + name + "!");
-                        }
 
-                        greet("World");
-                    </code></pre>
-                </div>
+                <div class="text-and-code">
+                    <p>If: executa um bloco se a condição especificada for verdadeira. <br>
+                        Else: executa um bloco se a condição do if for falsa. <br>
+                        Elseif: testa várias condições, é executado se a condição do if for falsa e a do elseif for verdadeira.
+                    </p>
+                    <pre>
+                        <code class="language-javascript">
+                            let idade = 25;
+
+                            if (idade < 13) {
+                                console.log("Criança");
+                            } else if (idade >= 13 && idade < 20) {
+                                console.log("Adolescente");
+                            } else if (idade >= 20 && idade < 60) {
+                                console.log("Adulto");
+                            } else {
+                                console.log("Idoso");
+                            }
+                        </code>
+                    </pre>
+               </div>
+
                 <h1 id="va2">Switch Statement</h1>
-                <p>Executa diferentes partes do código com base no valor de uma variável, uma alternativa ao uso de vários if e elseif.</p>
-                
-                <div class="container-code"></div>
-                    <pre><code class="language-javascript">
-let idade = 25;
-let faixaEtaria;
+                <div class="text-and-code">
+                    <p>Executa diferentes partes do código com base no valor de uma variável, uma alternativa ao uso de vários if e elseif.
 
-switch (true) {
-    case (idade < 13):
-        faixaEtaria = "Criança";
-        break;
-    case (idade >= 13 && idade < 20):
-        faixaEtaria = "Adolescente";
-        break;
-    case (idade >= 20 && idade < 60):
-        faixaEtaria = "Adulto";
-        break;
-    default:
-        faixaEtaria = "Idoso";
-        break;
-}
-
-console.log(faixaEtaria);
-                    </code></pre>
-                </div>
+                    </p>
+                    <pre>
+                        <code class="language-javascript">
+                            let idade = 25;
+                            let faixaEtaria;
+                            
+                            switch (true) {
+                                case (idade < 13):
+                                    faixaEtaria = "Criança";
+                                    break;
+                                case (idade >= 13 && idade < 20):
+                                    faixaEtaria = "Adolescente";
+                                    break;
+                                case (idade >= 20 && idade < 60):
+                                    faixaEtaria = "Adulto";
+                                    break;
+                                default:
+                                    faixaEtaria = "Idoso";
+                                    break;
+                            }
+                            
+                            console.log(faixaEtaria);
+                        </code>
+                    </pre>
+               </div>
 
                 <h1 id="va3">Ternary Operator</h1>
-                <p>Este é o conteúdo da opção.</p>
+                <div class="text-and-code">
+                    <p>É uma forma reduzida de realizar uma instrução if-else(operador ternário).
+                    </p>
+                    <pre>
+                        <code class="language-javascript">
+                            let idade = 25;
+
+                            let faixaEtaria = (idade < 13) ? "Criança" :
+                                            (idade >= 13 && idade < 20) ? "Adolescente" :
+                                            (idade >= 20 && idade < 60) ? "Adulto" :
+                                            "Idoso";
+
+                            console.log(faixaEtaria);
+                        </code>
+                    </pre>
+               </div>
+            </div>
             </div>
         </section>
 
@@ -220,11 +354,49 @@ console.log(faixaEtaria);
                 <h1 id="var8">JS .filter</h1>
                 <p>Este é o conteúdo da opção.</p>
             </div>
-    </main>
-    
+        </section>
+    </div>
 
+
+    <div id="membros-text">
+        <h1>Membros</h1>
+    </div>
+    <div class="espaço">
+    <div class="container">
+        <div class="item item-1">
+            <p>Vitória Roberta de Abreu da Silva</p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="item item-2">
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="item item-3">
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="item item-4">
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="item item-5">
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="item item-6">
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+    </div>
     
     <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="prism.js"></script>
 </body>
 </html>
