@@ -411,42 +411,204 @@
         <!--Seção da Repetição-->
         <section id="conteudo4" class="content-section">
             <section class="sidebar">
-                <a href="#var1"><div class="option-side">JS Loop For</div></a>
-                <a href="#var2"><div class="option-side">JS Loop For In</div></a>
-                <a href="#var3"><div class="option-side">JS Loop For Of</div></a>
-                <a href="#var4"><div class="option-side">JS Loop For Each</div></a>
-                <a href="#var5"><div class="option-side">JS Loop while</div></a>
-                <a href="#var6"><div class="option-side">JS .map</div></a>
-                <a href="#var7"><div class="option-side">JS .reduce</div></a>
-                <a href="#var8"><div class="option-side">JS .filter</div></a>
+                <a href="#vr1"><div class="option-side">JS Loop For</div></a>
+                <a href="#vr2"><div class="option-side">JS Loop For In</div></a>
+                <a href="#vr3"><div class="option-side">JS Loop For Of</div></a>
+                <a href="#vr4"><div class="option-side">JS Loop For Each</div></a>
+                <a href="#vr5"><div class="option-side">JS Loop while</div></a>
+                <a href="#vr6"><div class="option-side">JS .map</div></a>
+                <a href="#vr7"><div class="option-side">JS .reduce</div></a>
+                <a href="#vr8"><div class="option-side">JS .filter</div></a>
 
             </section>
 
             <div class="main-content">
-                <h1 id="var1">JS Loop For</h1>
-                <p>Este é o conteúdo da opção.</p>
+                <h1 id="vr1">JS Loop For</h1>
+                <div class="text-and-code">
+                    <p>O loop for é o laço tradicional em JavaScript, utilizado quando você conhece o número de iterações. Ele é estruturado com três partes: inicialização, condição e incremento/decremento.
 
-                <h1 id="var2">JS Loop For In</h1>
-                <p>Este é o conteúdo da opção.</p>
+                    </p>
+                    <pre>
+                        <code class="language-javascript">
+                                                        
+                            for (let i = 1; i <= 5; i++) {
+                                console.log(i);
+                            }
 
-                <h1 id="var3">JS Loop For Of</h1>
-                <p>Este é o conteúdo da opção.</p>
 
-                <h1 id="var4">JS Loop For Each</h1>
-                <p>Este é o conteúdo da opção.</p>
+                        </code>
+                    </pre>
+               
+                <p>
+                Quando usar:
+                O for é ideal para situações em que o número de iterações é conhecido de antemão.
+                Ele é muito útil para trabalhar com arrays e realizar tarefas repetitivas.
+                </p>
+                </div>
 
-                <h1 id="var5">JS Loop while</h1>
-                <p>Este é o conteúdo da opção.</p>
+                <h1 id="vr2">JS Loop For In</h1>
+                <div class="text-and-code">
+                    <p>O loop for in é utilizado para iterar sobre as propriedades enumeráveis de um objeto ou índices de um array. Ele itera sobre as chaves de um objeto, em vez dos valores.
 
-                <h1 id="var6">JS .map</h1>
-                <p>Este é o conteúdo da opção.</p>
 
-                <h1 id="var7">JS .reduce</h1>
-                <p>Este é o conteúdo da opção.</p>
+                    </p>
+                    <pre>
+                        <code class="language-javascript">
+                            let usuario = {
+                                nome: "Alice",
+                                idade: 25,
+                                cidade: "São Paulo"
+                            };
+                            for (let chave in usuario) {
+                                console.log(chave + ": " + usuario[chave]);
+                            }
+                            // Saída:
+                            // nome: Alice
+                            // idade: 25
+                            // cidade: São Paulo
+                            
+                        </code>
+                    </pre>
+               
+     <p>Exemplo com um Array:
+        Você também pode usar for in para iterar sobre os índices de um array.</p>
+        <pre>
+            <code class="language-javascript">
+                let numeros = [10, 20, 30];
+for (let indice in numeros) {
+    console.log("Índice:", indice, "Valor:", numeros[indice]);
+}
+// Saída:
+// Índice: 0 Valor: 10
+// Índice: 1 Valor: 20
+// Índice: 2 Valor: 30
 
-                <h1 id="var8">JS .filter</h1>
-                <p>Este é o conteúdo da opção.</p>
-            </div>
+
+
+            </code>
+        </pre>
+    </div>
+                <h1 id="vr3">JS Loop For Of</h1>
+                <div class="text-and-code">
+                    <p>O loop for of é usado para iterar sobre valores iteráveis, como arrays, strings, Maps, Sets, e outros objetos iteráveis. Ao contrário do for in, ele retorna diretamente os valores dos elementos, em vez dos índices ou chaves.
+
+                    </p>
+                    <pre>
+                        <code class="language-javascript">
+                            let numeros = [10, 20, 30];
+                            for (let valor of numeros) {
+                                console.log(valor);
+                            }
+                            // Saída:
+                            // 10
+                            // 20
+                            // 30
+                            
+                            
+                            
+                        </code>
+                    </pre>
+               </div>
+
+                <h1 id="vr4">JS Loop For Each</h1>
+                <div class="text-and-code">
+                    <p>O método forEach é utilizado especificamente para iterar sobre arrays. Ele chama uma função de callback para cada elemento do array, passando o valor do elemento, o índice e o array original para a função.
+
+                    </p>
+                    <pre>
+                        <code class="language-javascript">
+                            let numeros = [10, 20, 30];
+                            numeros.forEach(function(valor, indice) {
+                                console.log("Índice:", indice, "Valor:", valor);
+                            });
+                            // Saída:
+                            // Índice: 0 Valor: 10
+                            // Índice: 1 Valor: 20
+                            // Índice: 2 Valor: 30
+                        </code>
+                    </pre>
+               </div>
+
+                <h1 id="vr5">JS Loop while</h1>
+                <div class="text-and-code">
+                    <p>While: Testa a condição antes de executar o bloco, podendo não executar o código caso a condição seja falsa desde o início.
+
+                    </p>
+                    <pre>
+                        <code class="language-javascript">
+                            let num = 0;
+                            while (num <= 10) {
+                                num = prompt("Digite um número maior que 10:");
+                            }
+                            console.log("Número maior que 10 inserido:", num);
+                            
+                            
+                        </code>
+                    </pre>
+               </div>
+
+                <h1 id="vr6">JS .map</h1>
+                <div class="text-and-code">
+                    <p>O método em JavaScript é usado para transformar todos os elementos de um array. Ele cria um novo array com os resultados da função aplicada a cada item do array original, sem modificar o array original.
+
+                    </p>
+                    <pre>
+                        <code class="language-javascript">
+                            let numeros = [1, 2, 3, 4, 5];
+                            let dobrados = numeros.map(function(num) {
+                                return num * 2;
+                            });
+                            console.log(dobrados); // [2, 4, 6, 8, 10]
+                            
+
+                        </code>
+                    </pre>
+               </div>
+
+                <h1 id="vr7">JS .reduce</h1>
+                <div class="text-and-code">
+                    <p>Reduce é utilizado para reduzir um array a um único valor, aplicando uma função sobre cada elemento do array (da esquerda para a direita) e acumulando o resultado. 
+
+                        Ele é muito útil para somar valores, concatenar strings, ou até mesmo construir objetos ou arrays mais complexos.
+                        
+                    </p>
+                    <pre>
+                        <code class="language-javascript">
+                            let numeros = [1, 2, 3, 4, 5];
+                            let soma = numeros.reduce(function(acumulador, num) {
+                                return acumulador + num;
+                            }, 0);
+                            console.log(soma); // 15
+                            
+                            
+
+                        </code>
+                    </pre>
+               </div>
+
+                <h1 id="vr8">JS .filter</h1>
+                <div class="text-and-code">
+                    <p>Filter:  filtrar elementos de um array, retornando somente os elementos que atendem a uma condição específica. Ele cria um novo array com os elementos que passam no teste implementado pela função fornecida.
+
+                    </p>
+                    <pre>
+                        <code class="language-javascript">
+                            let numeros = [1, 2, 3, 4, 5];
+                            let maioresQueTres = numeros.filter(function(num) {
+                                return num > 3;
+                            });
+                            console.log(maioresQueTres); // [4, 5]
+                            
+                            
+
+                        </code>
+                    </pre>
+               
+     <p> - O filter() verificou cada número do array numeros e só incluiu os valores que são maiores que 3 no novo array.
+
+        Quando usar: Use filter() quando quiser remover certos itens de um array com base em uma condição, retornando apenas os elementos que atendem aos critérios especificados.</p>
+    </div>        
+    </div>
         </section>
     </div>
 
